@@ -31,7 +31,7 @@ func main() {
 	myConsumer, err := consumer.NewConsumer("conf/consumer.yaml")
 	if err != nil {
 		fmt.Println(err.Error())
-	}
+	},
 
 	for {
 		myConsumer.Consume(magMethod)
