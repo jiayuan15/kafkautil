@@ -141,7 +141,8 @@ func (myProducer *MyProducer) AsyncPublish(topic string, value string, key strin
 
 }
 
-func (myProducer *MyProducer) close() {
+//Close ...
+func (myProducer *MyProducer) Close() {
 	if myProducer.SyncProducer != nil {
 		myProducer.SyncProducer.Close()
 		myProducer.SyncProducer = nil
